@@ -1,0 +1,10 @@
+\section{Methodology}
+What is our verification approach?
+
+\ap{Think about a simple language/constructs or utility, we provide to users for specifying properties that we would like to verify. That will have a better impact. }
+\begin{itemize}
+    \item explain the idea of combining mutation based fuzzing with the reinforcement learning:
+    \item interpreting mutation based fuzzing as game to be able to apply reinforcement learning methods
+    \item connect mutation based fuzzing as game for reinforcement learning, with verification through sending packets with mutated header values to test for/ trigger bugs by comparing the packet as it was sent to the ingress port of the switch with the resulting processed packet at egress of the switch and applying rules for checking e.g. protocol compliant processing.
+    \item use this result as input for reward function, providing the feedback used to train the reinforcement learning model
+\end{itemize}

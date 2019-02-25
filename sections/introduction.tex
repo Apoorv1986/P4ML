@@ -1,0 +1,33 @@
+\section{Introduction}
+Motivation/ introduction:
+\begin{itemize}
+    \item Network verification is important as softwarization of the data plane is getting more and more attention in research as well as the industry
+    \item because network outages are costly and small errors can lead to whole network outages
+    \item existing verification approaches are not sufficient
+    % should the next points with hint on why existing work is insufficient be here already? or is it better to fully move that to related work?
+    \item existing approaches can already capture few kinds of bugs but are either based on symbolic execution, which is suffering from path explosion problem if the program is branchy
+    \item and/or assume a lot of additional manual work to reflect expected program behaviour
+    \item so these approaches are either lacking possibilities to also verify large or branchy programs but also require manual work even if the programs to be verified implement the same high level logic, e.g. layer 3 packet processing.
+    \item Problem statement: Can the correctness of P4 programs be automatically verified?
+    \item this paper aims at using radically different approaches changing the game of network verification and providing a solution to automatically verify P4 programs for a wide variety of common bugs in P4 programs.
+    \item contributions: 
+    \item implement reinforcement learning assisted fuzzing framework/ approach to automatically verify P4 programs overcoming several limitations of existing work.
+    
+\end{itemize}
+
+Verification approaches and comparison (or should that be part of related work?) Or only introducing Fuzzing?
+\begin{itemize}
+    \item Fuzzing is ...
+    \item types of fuzzing (White-box, grey-box, black-box, dumb, smart, generation based, mutation based, ...?)
+    \item
+\end{itemize}
+quick intro on machine learning/ reinforcement learning
+\begin{itemize}
+    \item What is machine learning?
+    \item taxonomy
+    \item reinforcement learning
+    \item Q learning
+    \item deep Q learning
+    \item usually used to let computers learn to play games (maybe ref. Google Deepmind papers as examples)
+\end{itemize}
+
