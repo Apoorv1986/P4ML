@@ -2,7 +2,153 @@
 
 \usepackage[english]{babel}
 \usepackage{blindtext}
+\usepackage{flushend}
+%\hypersetup{colorlinks,linkcolor={blue},citecolor={blue},urlcolor={red}}  
+%\usepackage{cite}
+%\usepackage{color}
+\hypersetup{pdfstartview=FitH,pdfpagelayout=SinglePage}
+%\usepackage{footnote}
+\setlength\paperheight {11in}
+\setlength\paperwidth {8.5in}
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.25in}
 
+\usepackage{booktabs} 
+
+%\usepackage{forest}
+\usepackage{varwidth}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{caption}
+%\usepackage[hang,small,labelfont=,textfont=]{caption}
+\usepackage[font=scriptsize,format=plain,labelfont=bf,textfont=bf]{caption}
+\usepackage{wrapfig}
+%\setlength\intextsep{0pt}
+\usepackage[font=footnotesize]{subcaption}
+\usepackage{amsfonts}
+\usepackage{multirow}
+%\usepackage{multicol}
+%\setlength{\columnsep}{20pt}
+%\setlength{\columnseprule}{0.01pt}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+	breaklines=true}
+
+%\setlength{\textwidth}{469pt}
+\usepackage{mdwlist}
+\usepackage{comment}
+\usepackage{scrextend}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+%\usepackage{verbatim}
+\usepackage{fancyvrb}
+%\usepackage[noend]{algorithm2e}
+%\pagestyle{empty}
+\SetKw{KwBy}{by}
+%\usepackage{algorithmicx}
+\usepackage{relsize}
+\usepackage{tabularx}
+
+\usepackage{bold-extra}
+\usepackage{xcolor}
+\usepackage[section]{placeins}
+\usepackage{tablefootnote}
+%\newcommand{\citeColored}[2]{{\hypersetup{citecolor=#1}\cite{‌​#2}}}
+%\usepackage{xcolor}
+%\usepackage[section]{placeins}
+\usepackage[english]{babel}
+%\usepackage{url}
+\usepackage{hyperref}
+\usepackage{fancyhdr} 
+\fancyhf{}
+\cfoot{\thepage}
+\pagestyle{fancy} 
+\newcommand\mycommfont[1]{\tiny\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\newcommand{\smartparagraph}[1]{\vspace{.05in}\noindent{\bf #1}}
+%
+% All template tuning for space reasons goes here
+%
+%\usepackage{titling}
+%\setlength{\droptitle}{-10em} 
+\usepackage{mdwlist}
+\usepackage{makecell}
+
+\renewcommand\theadalign{cb}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+\newcommand{\ap}[1]{\textit{\textcolor{purple}{[Apoorv]: #1}}}
+\newcommand{\kh}[1]{\textit{\textcolor{cyan}{[Kevin]: #1}}}
+\renewcommand{\footnotesize}{\tiny}
+%\settopmatter{printfolios=true}
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+\usepackage{cleveref}
+%\makeatletter
+%\ifcase \@ptsize \relax% 10pt
+%\newcommand{\miniscule}{\@setfontsize\miniscule{4}{5}}% \tiny: 5/6
+%\or% 11pt
+%\newcommand{\miniscule}{\@setfontsize\miniscule{5}{6}}% \tiny: 6/7
+%\or% 12pt
+%\newcommand{\miniscule}{\@setfontsize\miniscule{5}{6}}% \tiny: 6/7
+%\fi
+%\makeatother
+% You don't want to use \subparagraph
+\crefformat{section}{\S#2#1#3} % see manual of cleveref, section 8.2.1
+\crefformat{subsection}{\S#2#1#3}
+\crefformat{subsubsection}{\S#2#1#3}
+
+
+\begin{comment}
+\let\stditemize\itemize
+\let\endstditemize\enditemize
+\let\itemize\undefined
+\makecompactlist{itemize}{stditemize}
+% Modify section headers
+\usepackage{titlesec}
+
+ % You don't want to use \subparagraph
+
+
+
+% Paper dimension magic
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.25in}
+
+% Get the captions to not eat up all the space
+%\setlength{\abovecaptionskip}{20pt}
+%\setlength{\belowcaptionskip}{-3pt}
+\setlength{\floatsep}{5pt}
+\setlength{\textfloatsep}{9pt}
+\setlength{\dbltextfloatsep}{3pt}
+\setlength{\intextsep}{3pt}
+\end{comment}
+\sloppy
+
+\floatsep 4pt plus 2pt minus 2pt       % Space between adjacent floats moved
+% to top or bottom of text page.
+\textfloatsep 5pt plus 2pt minus 4pt   % Space between main text and floats
+% at top or bottom of page.
+\intextsep 4pt plus 2pt minus 2pt      % Space between in-text figures and
+% text.
+\dblfloatsep 4pt plus 2pt minus 2pt    % Same as \floatsep for double-column
+% figures in two-column mode.
+\dbltextfloatsep 4pt plus 2pt minus 4pt% \textfloatsep for double-column
 % Copyright
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference info
 \setcopyright{none}
@@ -29,8 +175,9 @@
 
 %% {} with no args suppresses printing of the price
 \acmPrice{}
-
-
+\newcommand{\system}{$\textsc{P4ML}$\xspace}
+% Program Behaviour Description Language/Logic (PBDL)
+\newcommand{\lang}{$\textsc{PBDL}$\xspace}
 \begin{document}
 \title{Reinforcement Learning for P4 Program Verification}
 
@@ -52,7 +199,7 @@
 
 % The default list of authors is too long for headers}
 \renewcommand{\shortauthors}{X.et al.}
-\newcommand{\ap}[1]{\textit{\textcolor{purple}{[Apoorv]: #1}}}
+%\newcommand{\ap}[1]{\textit{\textcolor{purple}{[Apoorv]: #1}}}
 \begin{abstract}
 \input{sections/abstract.tex}
 \end{abstract}
@@ -64,7 +211,7 @@
 %\input{sections/abstract.tex}
 %\end{abstract}
 
-
+\ap{In total: 4-5 plots, 3 figures, 1 code snippet, 1 table of rel. work, 14-15 valid references}
 \input{sections/introduction.tex}
 \input{sections/related_work.tex}
 \input{sections/methodology.tex}
