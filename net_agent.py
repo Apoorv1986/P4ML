@@ -1,5 +1,3 @@
-## TODO: put license stuff
-
 import random
 import time
 import numpy as np
