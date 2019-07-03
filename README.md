@@ -1,24 +1,22 @@
 # Runtime Verification of P4 Switches with Reinforcement Learning
 
-The project aims at implementing a prototype for the use of reinforcement learning techniques and algorithms to provide a smart and efficient solution for finding bugs in P4 programs. 
-
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
-In order to run the project make sure to have virtual box installed. If not already install go to [Virtualbox Website](https://www.virtualbox.org/wiki/Downloads) and follow the instructions to install it.
-Also make sure to download the P4 Tutorial VM for virtual box from [here](https://drive.google.com/uc?id=1f22-DYlUV33DsR88_MeMb4s7-1NX_ams&export=download).
+In order to run the project make sure to have VirtualBox installed. If not already install go to [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads) and follow the instructions to install it.
+Also make sure to download the P4 Tutorial VM for VirtualBox from [here](https://drive.google.com/uc?id=1f22-DYlUV33DsR88_MeMb4s7-1NX_ams&export=download).
 Clone the project by running:
 ```
-git clone https://gitlab.inet.tu-berlin.de/
+git clone https://gitlab.inet.tu-berlin.de/apoorv/P4ML.git
 ```
 
 
 ### Installing
 
-The following describes how to install necessary Python packages for running the project. The list of dependecies is provided with the requirements.txt. In order to install the packages create a virtualenv and install the packages by running the following:
+The following describes how to install necessary Python packages for running the project. The list of dependecies is provided with the requirements.txt file. In order to install the packages create a virtualenv and install the packages by running the following:
 
 ```
 $ python3.6 -m venv PATH-WHERE-VENV-SHOULD-BE-PLACED/
@@ -30,11 +28,12 @@ For running the examples it is necessary to run the P4 tutorial VM and enable po
 
 Hint: the password to the VM is: p4 
 ```
-$ scp -P 2222 ./P4/* p4@127.0.0.1:~/tutorials/exercises/basic/
+$ scp -P 2222 ./P4/* p4@127.0.0.1:~/tutorials/exercises/basic
 ```
 
 Before proceeding, create necessary folders for the results of the P4RL Agent, e.g., for the default locations execute:
-Notei: if the folders are created in another directory than P4ML/ adjust the paths in net_agent.py accordingly.
+Note: if the folders are created in another directory than P4ML/ adjust the paths in net_agent.py accordingly.
+
 ```
 $ cd PATH-TO-P4ML
 $ mkdir results
@@ -42,7 +41,8 @@ $ mkdir model_save
 $ mkdir figures
 ```
 
-For running a training of the P4RL Agent the switch placed in ~/tutorials/exercises/basic/ on the virtual box VM must be executed by running the following in a terminal of the VM.
+For execution of a training run of P4RL Agent, the switch placed in ~/tutorials/exercises/basic/ on the virtual box VM must be executed by running the following in a terminal of the VM.
+
 ```
 $ cd ~/tutorials/exercises/basic
 $ make run
@@ -51,7 +51,6 @@ This will create a Mininet environment with the topology described in P4ML/P4/to
 
 
 In another terminal on the VM run:
-
 Note: change the IP and Interface names to match your environments parameters.
 
 ```
@@ -60,7 +59,6 @@ $ sudo ./receive_h1.py '192.168.102.224' 'enp0s3'
 ```
 
 In another terminal on the VM run:
-
 Note: change the IP and Interface names to match your environments parameters.
 
 ```
@@ -69,7 +67,6 @@ $ sudo ./receive_h2.py '192.168.102.224' 'enp0s3'
 ``` 
 
 In another terminal on the VM run:
-
 Note: change the IP and Interface names to match your environments parameters.
 
 ```
@@ -90,7 +87,7 @@ Before starting the net_env.py, the host IP has to be placed in variable Host_IP
 Host_IP = '192.168.102.224'
 ```
 
-Now the net_agent.py can be run on the host machine. 
+Now the net_agent.py can be executed on the host machine. 
 
 ```
 $ PATH-TO-VENV/bin/python3.6 ./net_agent.py
@@ -98,7 +95,6 @@ $ PATH-TO-VENV/bin/python3.6 ./net_agent.py
 
 ## Deployment
 
-Deployment scripts will be provided in a later stage of the project.
 
 ## Built With
 
