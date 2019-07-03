@@ -93,23 +93,3 @@ Now the net_agent.py can be executed on the host machine.
 $ PATH-TO-VENV/bin/python3.6 ./net_agent.py
 ```
 
-## Deployment
-
-
-## Built With
-
-* 
-## Contributing
-
-
-## Versioning
-
-## Authors
-
-*
-
-## License
-
-## Acknowledgments
-
-*
