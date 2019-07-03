@@ -3,3 +3,4 @@ numpy==1.15.4
 keras==2.2.4
 paramiko==2.4.2
 scapy==2.4
+tensorflow==1.14.0
