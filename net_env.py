@@ -1,6 +1,3 @@
-# TODO: put license stuff
-
-
 import numpy as np
 from scapy.all import *
 from scapy.all import Ether, ICMP, IP, TCP, UDP, Raw

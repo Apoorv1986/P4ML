@@ -31,6 +31,14 @@ Hint: the password to the VM is: p4
 $ scp -P 2222 ./P4/* p4@127.0.0.1:~/tutorials/exercises/basic
 ```
 
+In addition, login to the VM and edit the basic.p4 in ~/tutorials/exercises/basic directory. Add the following lines to the apply block in ingress control block (after the existing if statement):
+```
+else {
+	mark_to_drop();
+	exit;
+}
+```
+
 Before proceeding, create necessary folders for the results of the P4RL Agent, e.g., for the default locations execute:
 Note: if the folders are created in another directory than P4ML/ adjust the paths in net_agent.py accordingly.
 
