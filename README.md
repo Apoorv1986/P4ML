@@ -2,11 +2,11 @@
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine.
+These instructions will help you to get the project up and running on your local machine.
 
 ### Prerequisites
 
-In order to run the project make sure to have VirtualBox installed. If not already install go to [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads) and follow the instructions to install it.
+In order to run the project, make sure to have VirtualBox installed. If not already install go to [VirtualBox Website](https://www.virtualbox.org/wiki/Downloads) and follow the instructions to install it.
 Also make sure to download the P4 Tutorial VM for VirtualBox from [here](https://drive.google.com/uc?id=1f22-DYlUV33DsR88_MeMb4s7-1NX_ams&export=download).
 Clone the project by running:
 ```
